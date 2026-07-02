@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF Catalog Builder</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">UNIK</div>
+    <div>
+      <h1>PDF Catalog Builder</h1>
+      <p>HTML + CSS + JavaScript + JSON</p>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="panel form-panel">
+      <h2>Add Product</h2>
+      <form id="productForm">
+        <label>Style Number<input id="style" required placeholder="10.ZO"></label>
+        <label>Description<textarea id="description" required placeholder="Classic motorcycle jacket"></textarea></label>
+        <label>Sizes<input id="sizes" required placeholder="M-5XL"></label>
+        <label>Price<input id="price" required type="number" step="0.01" placeholder="80.00"></label>
+        <label>Category<input id="category" required placeholder="Men's Leather Jackets"></label>
+        <label>Product Image<input id="image" type="file" accept="image/*"></label>
+        <button type="submit">Add Product</button>
+      </form>
+
+      <div class="controls">
+        <label>Catalog Layout
+          <select id="layout">
+            <option value="2">2 products per page</option>
+            <option value="4">4 products per page</option>
+          </select>
+        </label>
+        <button id="createPdf">Create PDF Catalog</button>
+        <button id="downloadJson" type="button">Download JSON</button>
+        <button id="resetData" type="button" class="secondary">Reset Sample Data</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Products</h2>
+      <div id="productList" class="product-list"></div>
+    </section>
+  </main>
+
+  <section class="catalog-wrap">
+    <div id="catalog"></div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

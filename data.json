@@ -1,0 +1,41 @@
+{
+  "brand": {
+    "name": "UNIK Authentic Riding Apparel",
+    "phone": "1-800-766-8645",
+    "logoText": "UNIK"
+  },
+  "products": [
+    {
+      "style": "10.ZO",
+      "description": "Classic belted motorcycle jacket with front and back views.",
+      "sizes": "M-5XL",
+      "price": "80.00",
+      "category": "Men's Leather Jackets",
+      "image": "assets/images/jacket-10zo.svg"
+    },
+    {
+      "style": "12.00",
+      "description": "Premium leather motorcycle jacket with side lace details.",
+      "sizes": "40-60",
+      "price": "85.00",
+      "category": "Men's Leather Jackets",
+      "image": "assets/images/jacket-1200.svg"
+    },
+    {
+      "style": "8261.17",
+      "description": "Ladies full finger gloves with purple trim and zipper detail.",
+      "sizes": "S-5XL",
+      "price": "15.00",
+      "category": "Ladies Full Finger Gloves",
+      "image": "assets/images/glove-purple.svg"
+    },
+    {
+      "style": "8261.22",
+      "description": "Ladies full finger gloves with pink trim and zipper detail.",
+      "sizes": "S-5XL",
+      "price": "15.00",
+      "category": "Ladies Full Finger Gloves",
+      "image": "assets/images/glove-pink.svg"
+    }
+  ]
+}
